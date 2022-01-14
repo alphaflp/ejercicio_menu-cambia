@@ -1,0 +1,33 @@
+body {
+    background-color: ghostwhite;
+}
+img {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    z-index: -2;
+    display: none;
+}
+ul>li {
+    display: inline;
+    padding: 10px;
+}
+#content {
+    text-align: justify;
+}
+@media screen and (max-width: 899px) {
+    #menu {
+        float: left;
+    }
+    ul>li {
+        display: block;
+    }
+}
+@media print {
+    #menu {
+        display: none;
+    }
+    img{
+        display: initial;
+    }
+}
